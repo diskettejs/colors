@@ -1,5 +1,11 @@
 # @diskette/colors
 
+## 0.1.3
+
+### Patch Changes
+
+- 2a31241: fix incorrect build output
+
 ## 0.1.2
 
 ### Patch Changes
