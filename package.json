@@ -5,9 +5,7 @@
   "exports": {
     ".": "./dist/index.js",
     "./*.css": "./dist/*.css",
-    "./p3/*.css": "./dist/p3/*.css",
-    "./static/*.css": "./dist/static/*.css",
-    "./static/p3/*.css": "./dist/static/p3/*.css"
+    "./p3/*.css": "./dist/p3/*.css"
   },
   "files": [
     "dist"
@@ -17,9 +15,8 @@
     "dev": "tsc --watch -p tsconfig.build.json",
     "build": "rm -rf dist && pnpm build:js && pnpm build:css",
     "build:js": "tsc -p tsconfig.build.json",
-    "build:css": "pnpm tsx ./scripts/build.ts",
-    "prepublishOnly": "pnpm build",
-    "test": "vitest",
+    "build:css": "pnpm tsx ./scripts/build-css.ts",
+    "postinstall": "pnpm build",
     "typecheck": "tsc",
     "lint": "oxlint --type-aware src",
     "release": "changeset version && changeset publish && git push --follow-tags"
@@ -31,8 +28,7 @@
     "oxlint-tsgolint": "^0.2.0",
     "prettier": "^3.6.2",
     "tsx": "^4.20.5",
-    "typescript": "^5.9.2",
-    "vitest": " ^3.2.4"
+    "typescript": "^5.9.2"
   },
   "description": "_description_",
   "homepage": "https://github.com/@diskettejs/colors#readme",
