@@ -1,5 +1,11 @@
 # @diskette/colors
 
+## 0.1.2
+
+### Patch Changes
+
+- 6a7b689: add back dist to package.json files, use prepublishOnly instead of postinstall
+
 ## 0.1.1
 
 ### Patch Changes
