@@ -7,14 +7,16 @@
     "./*.css": "./dist/*.css",
     "./p3/*.css": "./dist/p3/*.css"
   },
-  "files": [],
+  "files": [
+    "dist"
+  ],
   "packageManager": "pnpm@10.17.1",
   "scripts": {
     "dev": "tsc --watch -p tsconfig.build.json",
     "build": "rm -rf dist && pnpm build:js && pnpm build:css",
     "build:js": "tsc -p tsconfig.build.json",
     "build:css": "pnpm tsx ./scripts/build-css.ts",
-    "postinstall": "pnpm build",
+    "prepublishOnly": "pnpm build",
     "typecheck": "tsc",
     "lint": "oxlint --type-aware src",
     "release": "changeset version && changeset publish && git push --follow-tags"
