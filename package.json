@@ -7,9 +7,7 @@
     "./*.css": "./dist/*.css",
     "./p3/*.css": "./dist/p3/*.css"
   },
-  "files": [
-    "dist"
-  ],
+  "files": [],
   "packageManager": "pnpm@10.17.1",
   "scripts": {
     "dev": "tsc --watch -p tsconfig.build.json",
