@@ -2,7 +2,7 @@ import path from 'path'
 import * as allExports from '../src/index.ts'
 import { generateColors, type ColorScale } from '../src/lib/generator.ts'
 
-const outputDir = path.resolve(import.meta.dirname, '../build')
+const outputDir = path.resolve(import.meta.dirname, '../dist')
 
 const { semanticsLight, semanticsDark, ...colorScales } = allExports
 
