@@ -1,0 +1,50 @@
+{
+  "name": "@diskette/colors",
+  "type": "module",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*.css": "./dist/*.css",
+    "./p3/*.css": "./dist/p3/*.css",
+    "./static/*.css": "./dist/static/*.css",
+    "./static/p3/*.css": "./dist/static/p3/*.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "packageManager": "pnpm@10.17.1",
+  "scripts": {
+    "dev": "tsc --watch -p tsconfig.build.json",
+    "build": "rm -rf dist && pnpm build:js && pnpm build:css",
+    "build:js": "tsc -p tsconfig.build.json",
+    "build:css": "pnpm tsx ./scripts/build.ts",
+    "prepublishOnly": "pnpm build",
+    "test": "vitest",
+    "typecheck": "tsc",
+    "lint": "oxlint --type-aware src",
+    "release": "changeset version && changeset publish && git push --follow-tags"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "@types/node": "^24.3.0",
+    "oxlint": "^1.16.0",
+    "oxlint-tsgolint": "^0.2.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": " ^3.2.4"
+  },
+  "description": "_description_",
+  "homepage": "https://github.com/@diskettejs/colors#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/@diskettejs/colors.git"
+  },
+  "bugs": "https://github.com/@diskettejs/colors/issues",
+  "keywords": [],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "license": "MIT"
+}
