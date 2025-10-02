@@ -11,7 +11,7 @@ export const blackA = {
   blackA10: 'rgba(0, 0, 0, 0.8)',
   blackA11: 'rgba(0, 0, 0, 0.9)',
   blackA12: 'rgba(0, 0, 0, 0.95)',
-}
+} as const
 
 export const blackP3A = {
   blackA1: 'color(display-p3 0 0 0 / 0.05)',
@@ -26,4 +26,4 @@ export const blackP3A = {
   blackA10: 'color(display-p3 0 0 0 / 0.8)',
   blackA11: 'color(display-p3 0 0 0 / 0.9)',
   blackA12: 'color(display-p3 0 0 0 / 0.95)',
-}
+} as const

@@ -1,132 +1,59 @@
-import fs from 'node:fs'
-import path from 'node:path'
-
-type ColorScaleValues = Record<string, string>
-
-interface ColorScales {
-  values: ColorScaleValues
-  semantics?: {
-    light?: ColorScaleValues
-    dark?: ColorScaleValues
-  }
-}
-
-export type ColorScale = ColorScaleValues | ColorScales
-
-export interface ColorFile {
-  path: string
-  content: string
-}
-
-export interface GeneratorOptions {
-  outputDir: string
-  static?: boolean
-}
-
-function generateCssContent(
-  properties: Record<string, string>,
-  useStatic: boolean,
+/**
+ * Generates CSS for a color scale
+ * @param colorName - The name of the color (e.g., "amber")
+ * @param lightTheme - Merged light theme colors (base + alpha)
+ * @param darkTheme - Merged dark theme colors (base + alpha)
+ * @returns CSS string with @theme static block, light theme, and dark theme
+ */
+export function generateCSS(
+  colorName: string,
+  {
+    light,
+    dark,
+  }: { light: Record<string, string>; dark: Record<string, string> },
 ): string {
-  const cssProperties = Object.entries(properties)
-    .map(([name, value]) => `  --color-${toCssCasing(name)}: ${value};`)
+  const baseVars = Array.from({ length: 12 }, (_, i) => i + 1)
+
+  const staticBase = baseVars
+    .map((i) => `  --color-${colorName}-${i}: var(--${colorName}-${i});`)
+    .join('\n')
+  const staticAlpha = baseVars
+    .map((i) => `  --color-${colorName}-a${i}: var(--${colorName}-a${i});`)
     .join('\n')
 
-  return useStatic
-    ? `@theme static {\n${cssProperties}\n}\n`
-    : `@theme {\n${cssProperties}\n}\n`
+  const lightBase = baseVars
+    .map((i) => `  --${colorName}-${i}: ${light[`${colorName}${i}`]};`)
+    .join('\n')
+  const lightAlpha = baseVars
+    .map((i) => `  --${colorName}-a${i}: ${light[`${colorName}A${i}`]};`)
+    .join('\n')
+
+  const darkBase = baseVars
+    .map((i) => `  --${colorName}-${i}: ${dark[`${colorName}${i}`]};`)
+    .join('\n')
+  const darkAlpha = baseVars
+    .map((i) => `  --${colorName}-a${i}: ${dark[`${colorName}A${i}`]};`)
+    .join('\n')
+
+  return `@theme static {
+${staticBase}
+
+${staticAlpha}
 }
 
-function getOutputPath(
-  scaleName: string,
-  outputDir: string,
-  variant?: 'light' | 'dark',
-): string {
-  const isP3 = scaleName.includes('P3')
-  const baseName = scaleName.replace(/P3A?$/, '')
-  const fileName = toFileName(baseName)
+:root,
+.light,
+.light-theme {
+${lightBase}
 
-  const baseDir = isP3 ? path.join(outputDir, 'p3') : outputDir
-
-  if (variant) {
-    const suffix = variant === 'dark' ? '-theme-dark' : '-theme'
-    return path.join(baseDir, `${toCssCasing(baseName)}${suffix}.css`)
-  }
-
-  return path.join(baseDir, `${fileName}.css`)
+${lightAlpha}
 }
 
-function normalizeColorScale(scale: ColorScale): ColorScales {
-  if (
-    typeof scale === 'object' &&
-    'values' in scale &&
-    typeof scale.values === 'object'
-  ) {
-    return scale as ColorScales
-  }
-  return { values: scale as ColorScaleValues }
+.dark,
+.dark-theme {
+${darkBase}
+
+${darkAlpha}
 }
-
-function buildColorScaleFiles(
-  scaleName: string,
-  scale: ColorScale,
-  options: GeneratorOptions,
-): ColorFile[] {
-  const { outputDir, static: useStatic = true } = options
-  const normalized = normalizeColorScale(scale)
-  const files: ColorFile[] = []
-
-  files.push({
-    path: getOutputPath(scaleName, outputDir),
-    content: generateCssContent(normalized.values, useStatic),
-  })
-
-  if (normalized.semantics?.light) {
-    files.push({
-      path: getOutputPath(scaleName, outputDir, 'light'),
-      content: generateCssContent(normalized.semantics.light, useStatic),
-    })
-  }
-
-  if (normalized.semantics?.dark) {
-    files.push({
-      path: getOutputPath(scaleName, outputDir, 'dark'),
-      content: generateCssContent(normalized.semantics.dark, useStatic),
-    })
-  }
-
-  return files
-}
-
-export function writeThemeFiles(files: ColorFile[]): void {
-  const dirs = new Set(files.map((f) => path.dirname(f.path)))
-
-  for (const dir of dirs) {
-    fs.mkdirSync(dir, { recursive: true })
-  }
-
-  for (const file of files) {
-    fs.writeFileSync(file.path, file.content)
-  }
-}
-
-export function generateColors(
-  colorScales: Record<string, ColorScale>,
-  options: GeneratorOptions,
-): void {
-  const files: ColorFile[] = []
-  for (const [scaleName, scale] of Object.entries(colorScales)) {
-    files.push(...buildColorScaleFiles(scaleName, scale, options))
-  }
-  writeThemeFiles(files)
-}
-
-function toCssCasing(str: string) {
-  return str
-    .replace(/([a-z])(\d)/, '$1-$2')
-    .replace(/([A-Z])/g, '-$1')
-    .toLowerCase()
-}
-
-function toFileName(str: string) {
-  return toCssCasing(str).replace(/-a$/, '-alpha')
+`
 }

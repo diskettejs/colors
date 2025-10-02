@@ -4,18 +4,17 @@
   "version": "0.1.3",
   "exports": {
     ".": "./dist/index.js",
-    "./*.css": "./dist/*.css",
-    "./p3/*.css": "./dist/p3/*.css"
+    "./*.css": "./dist/*.css"
   },
   "files": [
     "dist"
   ],
   "packageManager": "pnpm@10.17.1",
   "scripts": {
+    "build": "rm -rf dist && pnpm build:ts && pnpm build:css",
+    "build:ts": "tsc -p tsconfig.build.json",
+    "build:css": "tsx scripts/build-css.ts",
     "dev": "tsc --watch -p tsconfig.build.json",
-    "build": "rm -rf dist && pnpm build:js && pnpm build:css",
-    "build:js": "tsc -p tsconfig.build.json",
-    "build:css": "pnpm tsx ./scripts/build-css.ts",
     "prepublishOnly": "pnpm build",
     "typecheck": "tsc",
     "lint": "oxlint --type-aware src",

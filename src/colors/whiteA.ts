@@ -11,7 +11,7 @@ export const whiteA = {
   whiteA10: 'rgba(255, 255, 255, 0.8)',
   whiteA11: 'rgba(255, 255, 255, 0.9)',
   whiteA12: 'rgba(255, 255, 255, 0.95)',
-}
+} as const
 
 export const whiteP3A = {
   whiteA1: 'color(display-p3 1 1 1 / 0.05)',
@@ -26,4 +26,4 @@ export const whiteP3A = {
   whiteA10: 'color(display-p3 1 1 1 / 0.8)',
   whiteA11: 'color(display-p3 1 1 1 / 0.9)',
   whiteA12: 'color(display-p3 1 1 1 / 0.95)',
-}
+} as const

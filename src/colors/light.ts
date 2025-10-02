@@ -11,7 +11,7 @@ export const gray = {
   gray10: '#838383',
   gray11: '#646464',
   gray12: '#202020',
-}
+} as const
 
 export const grayA = {
   grayA1: '#00000003',
@@ -26,7 +26,7 @@ export const grayA = {
   grayA10: '#0000007c',
   grayA11: '#0000009b',
   grayA12: '#000000df',
-}
+} as const
 
 export const grayP3 = {
   gray1: 'color(display-p3 0.988 0.988 0.988)',
@@ -41,7 +41,7 @@ export const grayP3 = {
   gray10: 'color(display-p3 0.512 0.512 0.512)',
   gray11: 'color(display-p3 0.392 0.392 0.392)',
   gray12: 'color(display-p3 0.125 0.125 0.125)',
-}
+} as const
 
 export const grayP3A = {
   grayA1: 'color(display-p3 0 0 0 / 0.012)',
@@ -56,7 +56,7 @@ export const grayP3A = {
   grayA10: 'color(display-p3 0 0 0 / 0.486)',
   grayA11: 'color(display-p3 0 0 0 / 0.608)',
   grayA12: 'color(display-p3 0 0 0 / 0.875)',
-}
+} as const
 
 export const mauve = {
   mauve1: '#fdfcfd',
@@ -71,7 +71,7 @@ export const mauve = {
   mauve10: '#84828e',
   mauve11: '#65636d',
   mauve12: '#211f26',
-}
+} as const
 
 export const mauveA = {
   mauveA1: '#55005503',
@@ -86,7 +86,7 @@ export const mauveA = {
   mauveA10: '#0500197d',
   mauveA11: '#0400119c',
   mauveA12: '#020008e0',
-}
+} as const
 
 export const mauveP3 = {
   mauve1: 'color(display-p3 0.991 0.988 0.992)',
@@ -101,7 +101,7 @@ export const mauveP3 = {
   mauve10: 'color(display-p3 0.514 0.508 0.552)',
   mauve11: 'color(display-p3 0.395 0.388 0.424)',
   mauve12: 'color(display-p3 0.128 0.122 0.147)',
-}
+} as const
 
 export const mauveP3A = {
   mauveA1: 'color(display-p3 0.349 0.024 0.349 / 0.012)',
@@ -116,7 +116,7 @@ export const mauveP3A = {
   mauveA10: 'color(display-p3 0.012 0.004 0.09 / 0.491)',
   mauveA11: 'color(display-p3 0.016 0 0.059 / 0.612)',
   mauveA12: 'color(display-p3 0.008 0 0.027 / 0.879)',
-}
+} as const
 
 export const slate = {
   slate1: '#fcfcfd',
@@ -131,7 +131,7 @@ export const slate = {
   slate10: '#80838d',
   slate11: '#60646c',
   slate12: '#1c2024',
-}
+} as const
 
 export const slateA = {
   slateA1: '#00005503',
@@ -146,7 +146,7 @@ export const slateA = {
   slateA10: '#00071b7f',
   slateA11: '#0007149f',
   slateA12: '#000509e3',
-}
+} as const
 
 export const slateP3 = {
   slate1: 'color(display-p3 0.988 0.988 0.992)',
@@ -161,7 +161,7 @@ export const slateP3 = {
   slate10: 'color(display-p3 0.503 0.512 0.549)',
   slate11: 'color(display-p3 0.379 0.392 0.421)',
   slate12: 'color(display-p3 0.113 0.125 0.14)',
-}
+} as const
 
 export const slateP3A = {
   slateA1: 'color(display-p3 0.024 0.024 0.349 / 0.012)',
@@ -176,7 +176,7 @@ export const slateP3A = {
   slateA10: 'color(display-p3 0.004 0.027 0.098 / 0.499)',
   slateA11: 'color(display-p3 0 0.02 0.063 / 0.62)',
   slateA12: 'color(display-p3 0 0.012 0.031 / 0.887)',
-}
+} as const
 
 export const sage = {
   sage1: '#fbfdfc',
@@ -191,7 +191,7 @@ export const sage = {
   sage10: '#7c8481',
   sage11: '#5f6563',
   sage12: '#1a211e',
-}
+} as const
 
 export const sageA = {
   sageA1: '#00804004',
@@ -206,7 +206,7 @@ export const sageA = {
   sageA10: '#00100a83',
   sageA11: '#000a07a0',
   sageA12: '#000805e5',
-}
+} as const
 
 export const sageP3 = {
   sage1: 'color(display-p3 0.986 0.992 0.988)',
@@ -221,7 +221,7 @@ export const sageP3 = {
   sage10: 'color(display-p3 0.492 0.515 0.506)',
   sage11: 'color(display-p3 0.377 0.395 0.389)',
   sage12: 'color(display-p3 0.107 0.129 0.118)',
-}
+} as const
 
 export const sageP3A = {
   sageA1: 'color(display-p3 0.024 0.514 0.267 / 0.016)',
@@ -236,7 +236,7 @@ export const sageP3A = {
   sageA10: 'color(display-p3 0 0.047 0.031 / 0.51)',
   sageA11: 'color(display-p3 0 0.031 0.02 / 0.624)',
   sageA12: 'color(display-p3 0 0.027 0.012 / 0.895)',
-}
+} as const
 
 export const olive = {
   olive1: '#fcfdfc',
@@ -251,7 +251,7 @@ export const olive = {
   olive10: '#7f847d',
   olive11: '#60655f',
   olive12: '#1d211c',
-}
+} as const
 
 export const oliveA = {
   oliveA1: '#00550003',
@@ -266,7 +266,7 @@ export const oliveA = {
   oliveA10: '#040e0082',
   oliveA11: '#020a00a0',
   oliveA12: '#010600e3',
-}
+} as const
 
 export const oliveP3 = {
   olive1: 'color(display-p3 0.989 0.992 0.989)',
@@ -281,7 +281,7 @@ export const oliveP3 = {
   olive10: 'color(display-p3 0.5 0.515 0.491)',
   olive11: 'color(display-p3 0.38 0.395 0.374)',
   olive12: 'color(display-p3 0.117 0.129 0.111)',
-}
+} as const
 
 export const oliveP3A = {
   oliveA1: 'color(display-p3 0.024 0.349 0.024 / 0.012)',
@@ -296,7 +296,7 @@ export const oliveP3A = {
   oliveA10: 'color(display-p3 0.024 0.047 0 / 0.51)',
   oliveA11: 'color(display-p3 0.012 0.039 0 / 0.628)',
   oliveA12: 'color(display-p3 0.008 0.024 0 / 0.891)',
-}
+} as const
 
 export const sand = {
   sand1: '#fdfdfc',
@@ -311,7 +311,7 @@ export const sand = {
   sand10: '#82827c',
   sand11: '#63635e',
   sand12: '#21201c',
-}
+} as const
 
 export const sandA = {
   sandA1: '#55550003',
@@ -326,7 +326,7 @@ export const sandA = {
   sandA10: '#0c0c0083',
   sandA11: '#080800a1',
   sandA12: '#060500e3',
-}
+} as const
 
 export const sandP3 = {
   sand1: 'color(display-p3 0.992 0.992 0.989)',
@@ -341,7 +341,7 @@ export const sandP3 = {
   sand10: 'color(display-p3 0.511 0.511 0.488)',
   sand11: 'color(display-p3 0.388 0.388 0.37)',
   sand12: 'color(display-p3 0.129 0.126 0.111)',
-}
+} as const
 
 export const sandP3A = {
   sandA1: 'color(display-p3 0.349 0.349 0.024 / 0.012)',
@@ -356,7 +356,7 @@ export const sandP3A = {
   sandA10: 'color(display-p3 0.047 0.047 0 / 0.514)',
   sandA11: 'color(display-p3 0.031 0.031 0 / 0.632)',
   sandA12: 'color(display-p3 0.024 0.02 0 / 0.891)',
-}
+} as const
 
 export const tomato = {
   tomato1: '#fffcfc',
@@ -371,7 +371,7 @@ export const tomato = {
   tomato10: '#dd4425',
   tomato11: '#d13415',
   tomato12: '#5c271f',
-}
+} as const
 
 export const tomatoA = {
   tomatoA1: '#ff000003',
@@ -386,7 +386,7 @@ export const tomatoA = {
   tomatoA10: '#d72400da',
   tomatoA11: '#cd2200ea',
   tomatoA12: '#460900e0',
-}
+} as const
 
 export const tomatoP3 = {
   tomato1: 'color(display-p3 0.998 0.989 0.988)',
@@ -401,7 +401,7 @@ export const tomatoP3 = {
   tomato10: 'color(display-p3 0.802 0.313 0.2)',
   tomato11: 'color(display-p3 0.755 0.259 0.152)',
   tomato12: 'color(display-p3 0.335 0.165 0.132)',
-}
+} as const
 
 export const tomatoP3A = {
   tomatoA1: 'color(display-p3 0.675 0.024 0.024 / 0.012)',
@@ -416,7 +416,7 @@ export const tomatoP3A = {
   tomatoA10: 'color(display-p3 0.757 0.141 0 / 0.8)',
   tomatoA11: 'color(display-p3 0.755 0.259 0.152)',
   tomatoA12: 'color(display-p3 0.335 0.165 0.132)',
-}
+} as const
 
 export const red = {
   red1: '#fffcfc',
@@ -431,7 +431,7 @@ export const red = {
   red10: '#dc3e42',
   red11: '#ce2c31',
   red12: '#641723',
-}
+} as const
 
 export const redA = {
   redA1: '#ff000003',
@@ -446,7 +446,7 @@ export const redA = {
   redA10: '#d10005c1',
   redA11: '#c40006d3',
   redA12: '#55000de8',
-}
+} as const
 
 export const redP3 = {
   red1: 'color(display-p3 0.998 0.989 0.988)',
@@ -461,7 +461,7 @@ export const redP3 = {
   red10: 'color(display-p3 0.798 0.294 0.285)',
   red11: 'color(display-p3 0.744 0.234 0.222)',
   red12: 'color(display-p3 0.36 0.115 0.143)',
-}
+} as const
 
 export const redP3A = {
   redA1: 'color(display-p3 0.675 0.024 0.024 / 0.012)',
@@ -476,7 +476,7 @@ export const redP3A = {
   redA10: 'color(display-p3 0.714 0.012 0 / 0.714)',
   redA11: 'color(display-p3 0.744 0.234 0.222)',
   redA12: 'color(display-p3 0.36 0.115 0.143)',
-}
+} as const
 
 export const ruby = {
   ruby1: '#fffcfd',
@@ -491,7 +491,7 @@ export const ruby = {
   ruby10: '#dc3b5d',
   ruby11: '#ca244d',
   ruby12: '#64172b',
-}
+} as const
 
 export const rubyA = {
   rubyA1: '#ff005503',
@@ -506,7 +506,7 @@ export const rubyA = {
   rubyA10: '#d2002cc4',
   rubyA11: '#c10030db',
   rubyA12: '#550016e8',
-}
+} as const
 
 export const rubyP3 = {
   ruby1: 'color(display-p3 0.998 0.989 0.992)',
@@ -521,7 +521,7 @@ export const rubyP3 = {
   ruby10: 'color(display-p3 0.795 0.286 0.375)',
   ruby11: 'color(display-p3 0.728 0.211 0.311)',
   ruby12: 'color(display-p3 0.36 0.115 0.171)',
-}
+} as const
 
 export const rubyP3A = {
   rubyA1: 'color(display-p3 0.675 0.024 0.349 / 0.012)',
@@ -536,7 +536,7 @@ export const rubyP3A = {
   rubyA10: 'color(display-p3 0.714 0 0.125 / 0.714)',
   rubyA11: 'color(display-p3 0.728 0.211 0.311)',
   rubyA12: 'color(display-p3 0.36 0.115 0.171)',
-}
+} as const
 
 export const crimson = {
   crimson1: '#fffcfd',
@@ -551,7 +551,7 @@ export const crimson = {
   crimson10: '#df3478',
   crimson11: '#cb1d63',
   crimson12: '#621639',
-}
+} as const
 
 export const crimsonA = {
   crimsonA1: '#ff005503',
@@ -566,7 +566,7 @@ export const crimsonA = {
   crimsonA10: '#d70056cb',
   crimsonA11: '#c4004fe2',
   crimsonA12: '#530026e9',
-}
+} as const
 
 export const crimsonP3 = {
   crimson1: 'color(display-p3 0.998 0.989 0.992)',
@@ -581,7 +581,7 @@ export const crimsonP3 = {
   crimson10: 'color(display-p3 0.807 0.266 0.468)',
   crimson11: 'color(display-p3 0.731 0.195 0.388)',
   crimson12: 'color(display-p3 0.352 0.111 0.221)',
-}
+} as const
 
 export const crimsonP3A = {
   crimsonA1: 'color(display-p3 0.675 0.024 0.349 / 0.012)',
@@ -596,7 +596,7 @@ export const crimsonP3A = {
   crimsonA10: 'color(display-p3 0.737 0 0.275 / 0.734)',
   crimsonA11: 'color(display-p3 0.731 0.195 0.388)',
   crimsonA12: 'color(display-p3 0.352 0.111 0.221)',
-}
+} as const
 
 export const pink = {
   pink1: '#fffcfe',
@@ -611,7 +611,7 @@ export const pink = {
   pink10: '#cf3897',
   pink11: '#c2298a',
   pink12: '#651249',
-}
+} as const
 
 export const pinkA = {
   pinkA1: '#ff00aa03',
@@ -626,7 +626,7 @@ export const pinkA = {
   pinkA10: '#c2007ac7',
   pinkA11: '#b60074d6',
   pinkA12: '#59003bed',
-}
+} as const
 
 export const pinkP3 = {
   pink1: 'color(display-p3 0.998 0.989 0.996)',
@@ -641,7 +641,7 @@ export const pinkP3 = {
   pink10: 'color(display-p3 0.748 0.27 0.581)',
   pink11: 'color(display-p3 0.698 0.219 0.528)',
   pink12: 'color(display-p3 0.363 0.101 0.279)',
-}
+} as const
 
 export const pinkP3A = {
   pinkA1: 'color(display-p3 0.675 0.024 0.675 / 0.012)',
@@ -656,7 +656,7 @@ export const pinkP3A = {
   pinkA10: 'color(display-p3 0.655 0 0.424 / 0.73)',
   pinkA11: 'color(display-p3 0.698 0.219 0.528)',
   pinkA12: 'color(display-p3 0.363 0.101 0.279)',
-}
+} as const
 
 export const plum = {
   plum1: '#fefcff',
@@ -671,7 +671,7 @@ export const plum = {
   plum10: '#a144af',
   plum11: '#953ea3',
   plum12: '#53195d',
-}
+} as const
 
 export const plumA = {
   plumA1: '#aa00ff03',
@@ -686,7 +686,7 @@ export const plumA = {
   plumA10: '#7f0092bb',
   plumA11: '#730086c1',
   plumA12: '#40004be6',
-}
+} as const
 
 export const plumP3 = {
   plum1: 'color(display-p3 0.995 0.988 0.999)',
@@ -701,7 +701,7 @@ export const plumP3 = {
   plum10: 'color(display-p3 0.587 0.29 0.667)',
   plum11: 'color(display-p3 0.543 0.263 0.619)',
   plum12: 'color(display-p3 0.299 0.114 0.352)',
-}
+} as const
 
 export const plumP3A = {
   plumA1: 'color(display-p3 0.675 0.024 1 / 0.012)',
@@ -716,7 +716,7 @@ export const plumP3A = {
   plumA10: 'color(display-p3 0.42 0 0.529 / 0.71)',
   plumA11: 'color(display-p3 0.543 0.263 0.619)',
   plumA12: 'color(display-p3 0.299 0.114 0.352)',
-}
+} as const
 
 export const purple = {
   purple1: '#fefcfe',
@@ -731,7 +731,7 @@ export const purple = {
   purple10: '#8347b9',
   purple11: '#8145b5',
   purple12: '#402060',
-}
+} as const
 
 export const purpleA = {
   purpleA1: '#aa00aa03',
@@ -746,7 +746,7 @@ export const purpleA = {
   purpleA10: '#53009eb8',
   purpleA11: '#52009aba',
   purpleA12: '#250049df',
-}
+} as const
 
 export const purpleP3 = {
   purple1: 'color(display-p3 0.995 0.988 0.996)',
@@ -761,7 +761,7 @@ export const purpleP3 = {
   purple10: 'color(display-p3 0.483 0.289 0.7)',
   purple11: 'color(display-p3 0.473 0.281 0.687)',
   purple12: 'color(display-p3 0.234 0.132 0.363)',
-}
+} as const
 
 export const purpleP3A = {
   purpleA1: 'color(display-p3 0.675 0.024 0.675 / 0.012)',
@@ -776,7 +776,7 @@ export const purpleP3A = {
   purpleA10: 'color(display-p3 0.271 0 0.58 / 0.71)',
   purpleA11: 'color(display-p3 0.473 0.281 0.687)',
   purpleA12: 'color(display-p3 0.234 0.132 0.363)',
-}
+} as const
 
 export const violet = {
   violet1: '#fdfcfe',
@@ -791,7 +791,7 @@ export const violet = {
   violet10: '#654dc4',
   violet11: '#6550b9',
   violet12: '#2f265f',
-}
+} as const
 
 export const violetA = {
   violetA1: '#5500aa03',
@@ -806,7 +806,7 @@ export const violetA = {
   violetA10: '#2300abb2',
   violetA11: '#1f0099af',
   violetA12: '#0b0043d9',
-}
+} as const
 
 export const violetP3 = {
   violet1: 'color(display-p3 0.991 0.988 0.995)',
@@ -821,7 +821,7 @@ export const violetP3 = {
   violet10: 'color(display-p3 0.381 0.306 0.741)',
   violet11: 'color(display-p3 0.383 0.317 0.702)',
   violet12: 'color(display-p3 0.179 0.15 0.359)',
-}
+} as const
 
 export const violetP3A = {
   violetA1: 'color(display-p3 0.349 0.024 0.675 / 0.012)',
@@ -836,7 +836,7 @@ export const violetP3A = {
   violetA10: 'color(display-p3 0.11 0 0.627 / 0.695)',
   violetA11: 'color(display-p3 0.383 0.317 0.702)',
   violetA12: 'color(display-p3 0.179 0.15 0.359)',
-}
+} as const
 
 export const iris = {
   iris1: '#fdfdff',
@@ -851,7 +851,7 @@ export const iris = {
   iris10: '#5151cd',
   iris11: '#5753c6',
   iris12: '#272962',
-}
+} as const
 
 export const irisA = {
   irisA1: '#0000ff02',
@@ -866,7 +866,7 @@ export const irisA = {
   irisA10: '#0000b6ae',
   irisA11: '#0600abac',
   irisA12: '#000246d8',
-}
+} as const
 
 export const irisP3 = {
   iris1: 'color(display-p3 0.992 0.992 0.999)',
@@ -881,7 +881,7 @@ export const irisP3 = {
   iris10: 'color(display-p3 0.318 0.318 0.774)',
   iris11: 'color(display-p3 0.337 0.326 0.748)',
   iris12: 'color(display-p3 0.154 0.161 0.371)',
-}
+} as const
 
 export const irisP3A = {
   irisA1: 'color(display-p3 0.02 0.02 1 / 0.008)',
@@ -896,7 +896,7 @@ export const irisP3A = {
   irisA10: 'color(display-p3 0 0 0.667 / 0.683)',
   irisA11: 'color(display-p3 0.337 0.326 0.748)',
   irisA12: 'color(display-p3 0.154 0.161 0.371)',
-}
+} as const
 
 export const indigo = {
   indigo1: '#fdfdfe',
@@ -911,7 +911,7 @@ export const indigo = {
   indigo10: '#3358d4',
   indigo11: '#3a5bc7',
   indigo12: '#1f2d5c',
-}
+} as const
 
 export const indigoA = {
   indigoA1: '#00008002',
@@ -926,7 +926,7 @@ export const indigoA = {
   indigoA10: '#002ec9cc',
   indigoA11: '#002bb7c5',
   indigoA12: '#001046e0',
-}
+} as const
 
 export const indigoP3 = {
   indigo1: 'color(display-p3 0.992 0.992 0.996)',
@@ -941,7 +941,7 @@ export const indigoP3 = {
   indigo10: 'color(display-p3 0.234 0.343 0.801)',
   indigo11: 'color(display-p3 0.256 0.354 0.755)',
   indigo12: 'color(display-p3 0.133 0.175 0.348)',
-}
+} as const
 
 export const indigoP3A = {
   indigoA1: 'color(display-p3 0.02 0.02 0.51 / 0.008)',
@@ -956,7 +956,7 @@ export const indigoP3A = {
   indigoA10: 'color(display-p3 0 0.137 0.737 / 0.765)',
   indigoA11: 'color(display-p3 0.256 0.354 0.755)',
   indigoA12: 'color(display-p3 0.133 0.175 0.348)',
-}
+} as const
 
 export const blue = {
   blue1: '#fbfdff',
@@ -971,7 +971,7 @@ export const blue = {
   blue10: '#0588f0',
   blue11: '#0d74ce',
   blue12: '#113264',
-}
+} as const
 
 export const blueA = {
   blueA1: '#0080ff04',
@@ -986,7 +986,7 @@ export const blueA = {
   blueA10: '#0086f0fa',
   blueA11: '#006dcbf2',
   blueA12: '#002359ee',
-}
+} as const
 
 export const blueP3 = {
   blue1: 'color(display-p3 0.986 0.992 0.999)',
@@ -1001,7 +1001,7 @@ export const blueP3 = {
   blue10: 'color(display-p3 0.234 0.523 0.912)',
   blue11: 'color(display-p3 0.15 0.44 0.84)',
   blue12: 'color(display-p3 0.102 0.193 0.379)',
-}
+} as const
 
 export const blueP3A = {
   blueA1: 'color(display-p3 0.024 0.514 1 / 0.016)',
@@ -1016,7 +1016,7 @@ export const blueP3A = {
   blueA10: 'color(display-p3 0 0.376 0.886 / 0.765)',
   blueA11: 'color(display-p3 0.15 0.44 0.84)',
   blueA12: 'color(display-p3 0.102 0.193 0.379)',
-}
+} as const
 
 export const cyan = {
   cyan1: '#fafdfe',
@@ -1031,7 +1031,7 @@ export const cyan = {
   cyan10: '#0797b9',
   cyan11: '#107d98',
   cyan12: '#0d3c48',
-}
+} as const
 
 export const cyanA = {
   cyanA1: '#0099cc05',
@@ -1046,7 +1046,7 @@ export const cyanA = {
   cyanA10: '#0094b7f8',
   cyanA11: '#007491ef',
   cyanA12: '#00323ef2',
-}
+} as const
 
 export const cyanP3 = {
   cyan1: 'color(display-p3 0.982 0.992 0.996)',
@@ -1061,7 +1061,7 @@ export const cyanP3 = {
   cyan10: 'color(display-p3 0.264 0.583 0.71)',
   cyan11: 'color(display-p3 0.08 0.48 0.63)',
   cyan12: 'color(display-p3 0.108 0.232 0.277)',
-}
+} as const
 
 export const cyanP3A = {
   cyanA1: 'color(display-p3 0.02 0.608 0.804 / 0.02)',
@@ -1076,7 +1076,7 @@ export const cyanP3A = {
   cyanA10: 'color(display-p3 0 0.435 0.608 / 0.738)',
   cyanA11: 'color(display-p3 0.08 0.48 0.63)',
   cyanA12: 'color(display-p3 0.108 0.232 0.277)',
-}
+} as const
 
 export const teal = {
   teal1: '#fafefd',
@@ -1091,7 +1091,7 @@ export const teal = {
   teal10: '#0d9b8a',
   teal11: '#008573',
   teal12: '#0d3d38',
-}
+} as const
 
 export const tealA = {
   tealA1: '#00cc9905',
@@ -1106,7 +1106,7 @@ export const tealA = {
   tealA10: '#009684f2',
   tealA11: '#008573',
   tealA12: '#00332df2',
-}
+} as const
 
 export const tealP3 = {
   teal1: 'color(display-p3 0.983 0.996 0.992)',
@@ -1121,7 +1121,7 @@ export const tealP3 = {
   teal10: 'color(display-p3 0.275 0.599 0.542)',
   teal11: 'color(display-p3 0.08 0.5 0.43)',
   teal12: 'color(display-p3 0.11 0.235 0.219)',
-}
+} as const
 
 export const tealP3A = {
   tealA1: 'color(display-p3 0.024 0.757 0.514 / 0.016)',
@@ -1136,7 +1136,7 @@ export const tealP3A = {
   tealA10: 'color(display-p3 0 0.451 0.369 / 0.726)',
   tealA11: 'color(display-p3 0.08 0.5 0.43)',
   tealA12: 'color(display-p3 0.11 0.235 0.219)',
-}
+} as const
 
 export const jade = {
   jade1: '#fbfefd',
@@ -1151,7 +1151,7 @@ export const jade = {
   jade10: '#26997b',
   jade11: '#208368',
   jade12: '#1d3b31',
-}
+} as const
 
 export const jadeA = {
   jadeA1: '#00c08004',
@@ -1166,7 +1166,7 @@ export const jadeA = {
   jadeA10: '#008764d9',
   jadeA11: '#007152df',
   jadeA12: '#002217e2',
-}
+} as const
 
 export const jadeP3 = {
   jade1: 'color(display-p3 0.986 0.996 0.992)',
@@ -1181,7 +1181,7 @@ export const jadeP3 = {
   jade10: 'color(display-p3 0.299 0.592 0.488)',
   jade11: 'color(display-p3 0.15 0.5 0.37)',
   jade12: 'color(display-p3 0.142 0.229 0.194)',
-}
+} as const
 
 export const jadeP3A = {
   jadeA1: 'color(display-p3 0.024 0.757 0.514 / 0.016)',
@@ -1196,7 +1196,7 @@ export const jadeP3A = {
   jadeA10: 'color(display-p3 0 0.42 0.271 / 0.702)',
   jadeA11: 'color(display-p3 0.15 0.5 0.37)',
   jadeA12: 'color(display-p3 0.142 0.229 0.194)',
-}
+} as const
 
 export const green = {
   green1: '#fbfefc',
@@ -1211,7 +1211,7 @@ export const green = {
   green10: '#2b9a66',
   green11: '#218358',
   green12: '#193b2d',
-}
+} as const
 
 export const greenA = {
   greenA1: '#00c04004',
@@ -1226,7 +1226,7 @@ export const greenA = {
   greenA10: '#008647d4',
   greenA11: '#00713fde',
   greenA12: '#002616e6',
-}
+} as const
 
 export const greenP3 = {
   green1: 'color(display-p3 0.986 0.996 0.989)',
@@ -1241,7 +1241,7 @@ export const greenP3 = {
   green10: 'color(display-p3 0.308 0.595 0.417)',
   green11: 'color(display-p3 0.19 0.5 0.32)',
   green12: 'color(display-p3 0.132 0.228 0.18)',
-}
+} as const
 
 export const greenP3A = {
   greenA1: 'color(display-p3 0.024 0.757 0.267 / 0.016)',
@@ -1256,7 +1256,7 @@ export const greenP3A = {
   greenA10: 'color(display-p3 0 0.416 0.153 / 0.691)',
   greenA11: 'color(display-p3 0.19 0.5 0.32)',
   greenA12: 'color(display-p3 0.132 0.228 0.18)',
-}
+} as const
 
 export const grass = {
   grass1: '#fbfefb',
@@ -1271,7 +1271,7 @@ export const grass = {
   grass10: '#3e9b4f',
   grass11: '#2a7e3b',
   grass12: '#203c25',
-}
+} as const
 
 export const grassA = {
   grassA1: '#00c00004',
@@ -1286,7 +1286,7 @@ export const grassA = {
   grassA10: '#007b17c1',
   grassA11: '#006514d5',
   grassA12: '#002006df',
-}
+} as const
 
 export const grassP3 = {
   grass1: 'color(display-p3 0.986 0.996 0.985)',
@@ -1301,7 +1301,7 @@ export const grassP3 = {
   grass10: 'color(display-p3 0.344 0.598 0.342)',
   grass11: 'color(display-p3 0.263 0.488 0.261)',
   grass12: 'color(display-p3 0.151 0.233 0.153)',
-}
+} as const
 
 export const grassP3A = {
   grassA1: 'color(display-p3 0.024 0.757 0.024 / 0.016)',
@@ -1316,7 +1316,7 @@ export const grassP3A = {
   grassA10: 'color(display-p3 0.008 0.388 0 / 0.659)',
   grassA11: 'color(display-p3 0.263 0.488 0.261)',
   grassA12: 'color(display-p3 0.151 0.233 0.153)',
-}
+} as const
 
 export const brown = {
   brown1: '#fefdfc',
@@ -1331,7 +1331,7 @@ export const brown = {
   brown10: '#a07553',
   brown11: '#815e46',
   brown12: '#3e332e',
-}
+} as const
 
 export const brownA = {
   brownA1: '#aa550003',
@@ -1346,7 +1346,7 @@ export const brownA = {
   brownA10: '#723300ac',
   brownA11: '#522100b9',
   brownA12: '#140600d1',
-}
+} as const
 
 export const brownP3 = {
   brown1: 'color(display-p3 0.995 0.992 0.989)',
@@ -1361,7 +1361,7 @@ export const brownP3 = {
   brown10: 'color(display-p3 0.601 0.465 0.344)',
   brown11: 'color(display-p3 0.485 0.374 0.288)',
   brown12: 'color(display-p3 0.236 0.202 0.183)',
-}
+} as const
 
 export const brownP3A = {
   brownA1: 'color(display-p3 0.675 0.349 0.024 / 0.012)',
@@ -1376,7 +1376,7 @@ export const brownP3A = {
   brownA10: 'color(display-p3 0.388 0.188 0 / 0.655)',
   brownA11: 'color(display-p3 0.485 0.374 0.288)',
   brownA12: 'color(display-p3 0.236 0.202 0.183)',
-}
+} as const
 
 export const bronze = {
   bronze1: '#fdfcfc',
@@ -1391,7 +1391,7 @@ export const bronze = {
   bronze10: '#957468',
   bronze11: '#7d5e54',
   bronze12: '#43302b',
-}
+} as const
 
 export const bronzeA = {
   bronzeA1: '#55000003',
@@ -1406,7 +1406,7 @@ export const bronzeA = {
   bronzeA10: '#4c150097',
   bronzeA11: '#3d0f00ab',
   bronzeA12: '#1d0600d4',
-}
+} as const
 
 export const bronzeP3 = {
   bronze1: 'color(display-p3 0.991 0.988 0.988)',
@@ -1421,7 +1421,7 @@ export const bronzeP3 = {
   bronze10: 'color(display-p3 0.563 0.461 0.414)',
   bronze11: 'color(display-p3 0.471 0.373 0.336)',
   bronze12: 'color(display-p3 0.251 0.191 0.172)',
-}
+} as const
 
 export const bronzeP3A = {
   bronzeA1: 'color(display-p3 0.349 0.024 0.024 / 0.012)',
@@ -1436,7 +1436,7 @@ export const bronzeP3A = {
   bronzeA10: 'color(display-p3 0.255 0.082 0 / 0.585)',
   bronzeA11: 'color(display-p3 0.471 0.373 0.336)',
   bronzeA12: 'color(display-p3 0.251 0.191 0.172)',
-}
+} as const
 
 export const gold = {
   gold1: '#fdfdfc',
@@ -1451,7 +1451,7 @@ export const gold = {
   gold10: '#8c7a5e',
   gold11: '#71624b',
   gold12: '#3b352b',
-}
+} as const
 
 export const goldA = {
   goldA1: '#55550003',
@@ -1466,7 +1466,7 @@ export const goldA = {
   goldA10: '#492d00a1',
   goldA11: '#362100b4',
   goldA12: '#130c00d4',
-}
+} as const
 
 export const goldP3 = {
   gold1: 'color(display-p3 0.992 0.992 0.989)',
@@ -1481,7 +1481,7 @@ export const goldP3 = {
   gold10: 'color(display-p3 0.538 0.479 0.38)',
   gold11: 'color(display-p3 0.433 0.386 0.305)',
   gold12: 'color(display-p3 0.227 0.209 0.173)',
-}
+} as const
 
 export const goldP3A = {
   goldA1: 'color(display-p3 0.349 0.349 0.024 / 0.012)',
@@ -1496,7 +1496,7 @@ export const goldP3A = {
   goldA10: 'color(display-p3 0.255 0.161 0 / 0.62)',
   goldA11: 'color(display-p3 0.433 0.386 0.305)',
   goldA12: 'color(display-p3 0.227 0.209 0.173)',
-}
+} as const
 
 export const sky = {
   sky1: '#f9feff',
@@ -1511,7 +1511,7 @@ export const sky = {
   sky10: '#74daf8',
   sky11: '#00749e',
   sky12: '#1d3e56',
-}
+} as const
 
 export const skyA = {
   skyA1: '#00d5ff06',
@@ -1526,7 +1526,7 @@ export const skyA = {
   skyA10: '#00bcf38b',
   skyA11: '#00749e',
   skyA12: '#002540e2',
-}
+} as const
 
 export const skyP3 = {
   sky1: 'color(display-p3 0.98 0.995 0.999)',
@@ -1541,7 +1541,7 @@ export const skyP3 = {
   sky10: 'color(display-p3 0.555 0.845 0.959)',
   sky11: 'color(display-p3 0.193 0.448 0.605)',
   sky12: 'color(display-p3 0.145 0.241 0.329)',
-}
+} as const
 
 export const skyP3A = {
   skyA1: 'color(display-p3 0.02 0.804 1 / 0.02)',
@@ -1556,7 +1556,7 @@ export const skyP3A = {
   skyA10: 'color(display-p3 0.004 0.647 0.914 / 0.444)',
   skyA11: 'color(display-p3 0.193 0.448 0.605)',
   skyA12: 'color(display-p3 0.145 0.241 0.329)',
-}
+} as const
 
 export const mint = {
   mint1: '#f9fefd',
@@ -1571,7 +1571,7 @@ export const mint = {
   mint10: '#7de0cb',
   mint11: '#027864',
   mint12: '#16433c',
-}
+} as const
 
 export const mintA = {
   mintA1: '#00d5aa06',
@@ -1586,7 +1586,7 @@ export const mintA = {
   mintA10: '#00c39982',
   mintA11: '#007763fd',
   mintA12: '#00312ae9',
-}
+} as const
 
 export const mintP3 = {
   mint1: 'color(display-p3 0.98 0.995 0.992)',
@@ -1601,7 +1601,7 @@ export const mintP3 = {
   mint10: 'color(display-p3 0.585 0.871 0.797)',
   mint11: 'color(display-p3 0.203 0.463 0.397)',
   mint12: 'color(display-p3 0.136 0.259 0.236)',
-}
+} as const
 
 export const mintP3A = {
   mintA1: 'color(display-p3 0.02 0.804 0.608 / 0.02)',
@@ -1616,7 +1616,7 @@ export const mintP3A = {
   mintA10: 'color(display-p3 0.004 0.69 0.51 / 0.416)',
   mintA11: 'color(display-p3 0.203 0.463 0.397)',
   mintA12: 'color(display-p3 0.136 0.259 0.236)',
-}
+} as const
 
 export const lime = {
   lime1: '#fcfdfa',
@@ -1631,7 +1631,7 @@ export const lime = {
   lime10: '#b0e64c',
   lime11: '#5c7c2f',
   lime12: '#37401c',
-}
+} as const
 
 export const limeA = {
   limeA1: '#66990005',
@@ -1646,7 +1646,7 @@ export const limeA = {
   limeA10: '#8fdc00b3',
   limeA11: '#375f00d0',
   limeA12: '#1e2900e3',
-}
+} as const
 
 export const limeP3 = {
   lime1: 'color(display-p3 0.989 0.992 0.981)',
@@ -1661,7 +1661,7 @@ export const limeP3 = {
   lime10: 'color(display-p3 0.734 0.896 0.397)',
   lime11: 'color(display-p3 0.386 0.482 0.227)',
   lime12: 'color(display-p3 0.222 0.25 0.128)',
-}
+} as const
 
 export const limeP3A = {
   limeA1: 'color(display-p3 0.412 0.608 0.02 / 0.02)',
@@ -1676,7 +1676,7 @@ export const limeP3A = {
   limeA10: 'color(display-p3 0.561 0.827 0 / 0.604)',
   limeA11: 'color(display-p3 0.386 0.482 0.227)',
   limeA12: 'color(display-p3 0.222 0.25 0.128)',
-}
+} as const
 
 export const yellow = {
   yellow1: '#fdfdf9',
@@ -1691,7 +1691,7 @@ export const yellow = {
   yellow10: '#ffdc00',
   yellow11: '#9e6c00',
   yellow12: '#473b1f',
-}
+} as const
 
 export const yellowA = {
   yellowA1: '#aaaa0006',
@@ -1706,7 +1706,7 @@ export const yellowA = {
   yellowA10: '#ffdc00',
   yellowA11: '#9e6c00',
   yellowA12: '#2e2000e0',
-}
+} as const
 
 export const yellowP3 = {
   yellow1: 'color(display-p3 0.992 0.992 0.978)',
@@ -1721,7 +1721,7 @@ export const yellowP3 = {
   yellow10: 'color(display-p3 0.977 0.868 0.291)',
   yellow11: 'color(display-p3 0.6 0.44 0)',
   yellow12: 'color(display-p3 0.271 0.233 0.137)',
-}
+} as const
 
 export const yellowP3A = {
   yellowA1: 'color(display-p3 0.675 0.675 0.024 / 0.024)',
@@ -1736,7 +1736,7 @@ export const yellowP3A = {
   yellowA10: 'color(display-p3 0.969 0.812 0 / 0.71)',
   yellowA11: 'color(display-p3 0.6 0.44 0)',
   yellowA12: 'color(display-p3 0.271 0.233 0.137)',
-}
+} as const
 
 export const amber = {
   amber1: '#fefdfb',
@@ -1751,7 +1751,7 @@ export const amber = {
   amber10: '#ffba18',
   amber11: '#ab6400',
   amber12: '#4f3422',
-}
+} as const
 
 export const amberA = {
   amberA1: '#c0800004',
@@ -1766,7 +1766,7 @@ export const amberA = {
   amberA10: '#ffb300e7',
   amberA11: '#ab6400',
   amberA12: '#341500dd',
-}
+} as const
 
 export const amberP3 = {
   amber1: 'color(display-p3 0.995 0.992 0.985)',
@@ -1781,7 +1781,7 @@ export const amberP3 = {
   amber10: 'color(display-p3 0.959 0.741 0.274)',
   amber11: 'color(display-p3 0.64 0.4 0)',
   amber12: 'color(display-p3 0.294 0.208 0.145)',
-}
+} as const
 
 export const amberP3A = {
   amberA1: 'color(display-p3 0.757 0.514 0.024 / 0.016)',
@@ -1796,7 +1796,7 @@ export const amberP3A = {
   amberA10: 'color(display-p3 0.945 0.643 0 / 0.726)',
   amberA11: 'color(display-p3 0.64 0.4 0)',
   amberA12: 'color(display-p3 0.294 0.208 0.145)',
-}
+} as const
 
 export const orange = {
   orange1: '#fefcfb',
@@ -1811,7 +1811,7 @@ export const orange = {
   orange10: '#ef5f00',
   orange11: '#cc4e00',
   orange12: '#582d1d',
-}
+} as const
 
 export const orangeA = {
   orangeA1: '#c0400004',
@@ -1826,7 +1826,7 @@ export const orangeA = {
   orangeA10: '#ef5f00',
   orangeA11: '#cc4e00',
   orangeA12: '#431200e2',
-}
+} as const
 
 export const orangeP3 = {
   orange1: 'color(display-p3 0.995 0.988 0.985)',
@@ -1841,7 +1841,7 @@ export const orangeP3 = {
   orange10: 'color(display-p3 0.87 0.409 0.164)',
   orange11: 'color(display-p3 0.76 0.34 0)',
   orange12: 'color(display-p3 0.323 0.185 0.127)',
-}
+} as const
 
 export const orangeP3A = {
   orangeA1: 'color(display-p3 0.757 0.267 0.024 / 0.016)',
@@ -1856,4 +1856,4 @@ export const orangeP3A = {
   orangeA10: 'color(display-p3 0.843 0.29 0 / 0.836)',
   orangeA11: 'color(display-p3 0.76 0.34 0)',
   orangeA12: 'color(display-p3 0.323 0.185 0.127)',
-}
+} as const
