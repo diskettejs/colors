@@ -1,5 +1,11 @@
 # @diskette/colors
 
+## 0.2.0
+
+### Minor Changes
+
+- dcd5092: simplify CSS output
+
 ## 0.1.3
 
 ### Patch Changes
